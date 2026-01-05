@@ -172,9 +172,8 @@ $current_password = $wifi_1_password;
         </form>
 
         <div class="text-center mt-3">
-            <a href="router_setup.php?barcode=<?= urlencode($onu_serial) ?>
-                &customer_id=<?= urlencode($customer_id) ?>
-                &customer_login=<?= urlencode($customer_login) ?>" class="btn btn-back">Back</a>
+            <a href="router_setup.php?barcode=<?= urlencode($onu_serial) ?>&customer_id=<?= urlencode($customer_id) ?>&customer_login=<?= urlencode($customer_login) ?>"
+                class="btn btn-back">Back</a>
         </div>
 
     </div>
