@@ -7,6 +7,7 @@ $smartolt_api_token = $env['SMARTOLT_API_TOKEN'];
 
 $customer_id = $_GET['customer_id'] ?? 'Unknown';
 $onu_serial = $_GET['barcode'] ?? 'Unknown';
+$customer_login = $_GET['customer_login'];
 
 // SmartOLT API endpoint
 $url = "{$smartolt_api_url}onu/get_onu_details/{$onu_serial}";
@@ -140,6 +141,13 @@ $current_password = $wifi_1_password;
 
         <div id="responseMessage"></div>
 
+        <div class="alert alert-light border text-center mb-3">
+            <strong>Account Number:</strong>
+            <span class="text-primary">
+                <?= htmlspecialchars($customer_login) ?>
+            </span>
+        </div>
+
         <!-- PRIMARY WIFI -->
         <form id="primaryWifiForm" class="wifi-section">
             <h5>Main WiFi</h5>
@@ -164,8 +172,9 @@ $current_password = $wifi_1_password;
         </form>
 
         <div class="text-center mt-3">
-            <a href="router_setup.php?barcode=<?= urlencode($onu_serial) ?>&customer_id=<?= urlencode($customer_id) ?>"
-                class="btn btn-back">Back</a>
+            <a href="router_setup.php?barcode=<?= urlencode($onu_serial) ?>
+                &customer_id=<?= urlencode($customer_id) ?>
+                &customer_login=<?= urlencode($customer_login) ?>" class="btn btn-back">Back</a>
         </div>
 
     </div>
