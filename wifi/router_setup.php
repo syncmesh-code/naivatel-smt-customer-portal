@@ -95,7 +95,7 @@ $customer_login = isset($_GET['customer_login']) ? htmlspecialchars($_GET['custo
                     <div class="card router-card p-4 text-center">
                         <i class="bi bi-wifi card-icon"></i>
                         <h4 class="mt-3 mb-2">Router Settings</h4>
-                        <p class="text-muted">pdate your WiFi name and password</p>
+                        <p class="text-muted">Update your WiFi name and password</p>
                     </div>
                 </a>
             </div>
