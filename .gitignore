@@ -1,0 +1,12 @@
+# Environment & secrets
+src/
+
+# Logs
+*.log
+logs/
+call_logs.json
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
