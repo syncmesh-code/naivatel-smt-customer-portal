@@ -64,7 +64,7 @@ function convertSerialNumber($serialNumber)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Konnect – My Routers</title>
+    <title>Naivatel – My Routers</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -92,11 +92,11 @@ function convertSerialNumber($serialNumber)
 
         .router-icon {
             font-size: 46px;
-            color: #0d6efd;
+            color: #0e165e;
         }
 
         .btn-manage {
-            background: #0d6efd;
+            background: #0e165e;
             color: white;
             border-radius: 8px;
             padding: 9px 16px;
@@ -167,7 +167,7 @@ function convertSerialNumber($serialNumber)
 
                 <div class="col-12 text-center text-muted">
                     <i class="bi bi-exclamation-circle fs-1"></i>
-                    <p class="mt-3">No routers found for your Konnect account.</p>
+                    <p class="mt-3">No routers found for your Naivatel account.</p>
                 </div>
 
             <?php endif; ?>

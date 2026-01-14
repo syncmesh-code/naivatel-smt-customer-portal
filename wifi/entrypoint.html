@@ -1,0 +1,55 @@
+<div class="card" id="smartolt_panel" style="display:none">
+    <div class="card-header">
+        <span class="icon-wrap color-success">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 width="24" height="24" 
+                 viewBox="0 0 24 24" 
+                 fill="none" 
+                 stroke="#28a745" 
+                 stroke-width="2" 
+                 stroke-linecap="round" 
+                 stroke-linejoin="round">
+              <path d="M3 13m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+              <path d="M17 17l0 .01"></path>
+              <path d="M13 17l0 .01"></path>
+              <path d="M15 13l0 -2"></path>
+              <path d="M11.75 8.75a4 4 0 0 1 6.5 0"></path>
+              <path d="M8.5 6.5a8 8 0 0 1 13 0"></path>
+            </svg>
+        </span>
+        <h4>Manage Your Router</h4>
+    </div>
+
+    <div class="card-body p-20 pt-0">
+        <div class="row">
+            <div class="col-md-12 pb-16">
+                <strong>Manage your router easily.</strong><br>
+                View status and update WiFi settings from your portal.
+            </div>
+        </div>
+
+        <form action="https://billing.naivatel.co.ke/smt/naivatel-smt-customer-portal/wifi/list_routers.php"
+              method="POST">
+
+            <input type="hidden" name="customer_id" value="{{ customer.id }}">
+            <input type="hidden" name="customer_login" value="{{ customer.login }}">
+            <input type="hidden" name="customer_name" value="{{ customer.name }}">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit"
+                           value="Manage Device"
+                           class="btn btn-outline-primary ms-12">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#potal_dashboard_left_panel').append($('#smartolt_panel'));
+            $('#smartolt_panel').show();
+        });
+    </script>
+</div>

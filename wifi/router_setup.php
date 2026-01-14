@@ -51,7 +51,7 @@ $customer_login = isset($_GET['customer_login']) ? htmlspecialchars($_GET['custo
 
         .card-icon {
             font-size: 48px;
-            color: #0d6efd;
+            color: #0e165e;
         }
 
         .card-title {
@@ -67,7 +67,7 @@ $customer_login = isset($_GET['customer_login']) ? htmlspecialchars($_GET['custo
         <!-- Header -->
         <div class="page-header">
             <h2 class="fw-bold"><i class="bi bi-router-fill me-2"></i> Router Management</h2>
-            <p class="text-muted">Manage settings for your Konnect router</p>
+            <p class="text-muted">Manage settings for your Naivatel router</p>
         </div>
 
         <!-- Router Info -->

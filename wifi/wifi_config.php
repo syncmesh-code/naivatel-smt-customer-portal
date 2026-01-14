@@ -24,6 +24,7 @@ $response = curl_exec($curl);
 $http_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 curl_close($curl);
 
+
 // Default WiFi values
 $wifi_1_ssid = "Not Available";
 $wifi_1_password = "Not Available";
@@ -71,7 +72,7 @@ $current_password = $wifi_1_password;
         }
 
         .wifi-section {
-            border: 2px solid #0d6efd;
+            border: 2px solid #0e165e;
             border-radius: 12px;
             padding: 20px;
         }
@@ -79,7 +80,7 @@ $current_password = $wifi_1_password;
         .wifi-section h5 {
             text-align: center;
             font-weight: 700;
-            color: #0d6efd;
+            color: #0e165e;
             margin-bottom: 15px;
         }
 
@@ -93,7 +94,7 @@ $current_password = $wifi_1_password;
         }
 
         .btn-primary {
-            background: #0d6efd;
+            background: #0e165e;
             border-radius: 8px;
         }
 

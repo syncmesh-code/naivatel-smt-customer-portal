@@ -28,6 +28,7 @@ curl_close($curl);
 $decoded = json_decode($response, true);
 $data = ($decoded && isset($decoded['status']) && $decoded['status'] === true) ? $decoded : null;
 
+
 // Default values
 $display_status = "Unknown";
 $uptime = "N/A";
